@@ -2,12 +2,26 @@
 
 if($_GET["Link"] && strpos($_GET["url"] , "mkv"))
 { 
+    $MovieServer = $_GET["Link"][-1];
     $MovieLink = $_GET["url"];
-    GetDownloadLink($MovieLink);
+    GetDownloadLink($MovieServer , $MovieLink);
 }
 
-function GetDownloadLink($MovieLink)
+function GetDownloadLink($MovieServer , $MovieLink)
 {
+    $DownLink = "http://dl" . $MovieServer .".mvbz.bid/" . $MovieLink;
+
+      if(strpos($DownLink , "404") || strpos($DownLink , "403")) 
+      {
+        echo("Link Not Found!");
+      }
+      else
+      { 
+        echo(json_encode(array('DownloadLink' => $DownLink , 'Developer' => "AGC007")));
+      }
+
+      /*
+    echo
     for($i=1;  $i<=10;  $i++)
     {
         $DownloadLink = "http://dl" . $i .".mvbz.bid/" . $MovieLink;
@@ -21,14 +35,14 @@ function GetDownloadLink($MovieLink)
         $Source = curl_exec($GetPageLink);
 
         if(strpos($Source , "404") || strpos($Source , "403"))
-        {
+       {
 
         }
         else
         { 
             echo(json_encode(array('DownloadLink' => $DownloadLink , 'Developer' => "AGC007"))); 
-            break;
+           break;
         }
-    }
- }
+      */
+}
 ?>

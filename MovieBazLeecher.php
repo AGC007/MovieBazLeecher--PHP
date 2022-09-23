@@ -9,7 +9,7 @@ if($_GET["Link"] && strpos($_GET["url"] , "mkv"))
 
 function GetDownloadLink($MovieServer , $MovieLink)
 {
-    $DownLink = "http://dl" . $MovieServer .".mvbz.bid/" . $MovieLink;
+    $DownLink = "http://dl" . $MovieServer .".mvbznet.link/" . $MovieLink;
 
       if(strpos($DownLink , "404") || strpos($DownLink , "403")) 
       {

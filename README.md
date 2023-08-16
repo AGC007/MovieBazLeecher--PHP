@@ -1,11 +1,10 @@
 # MovieBazLeecher--PHP
 
-MovieBazLeecher [v1] By AGC007™ -- PHP:
+💥 [-MovieBazLeecher-APi-[V1] By AGC007™-] 💥
 
--- MovieBaz Leech All Movie 
-
--- Fast Speed
-
--- PHP
+- MovieBaz Leech All Movie ✅
+- 100% Working ✅
+- Tested ✅
+- Fast ✅
 
 ------- Developed by AGC007 -------

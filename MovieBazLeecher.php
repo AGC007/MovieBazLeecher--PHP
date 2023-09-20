@@ -7,7 +7,7 @@ if($_GET["Link"] && strpos($_GET["url"] , "mkv"))
     GetDownloadLink($MovieServer , $MovieLink);
 }
 
-function GetDownloadLink($MovieServer , $MovieLink , $Bot_Token)
+function GetDownloadLink($MovieServer , $MovieLink)
 {
 
     #~~~~~~~~~~ Account info  ~~~~~~~~~~#
@@ -82,7 +82,7 @@ function GetDownloadLink($MovieServer , $MovieLink , $Bot_Token)
     #~~~~~~~~~~ Download Link ~~~~~~~~~~#
 
 #--------------------------------------------- M2 ---------------------------------------------------------#
-    
+
     /*
       $DwnloadLink_D = ".mvbznet.link";
 
